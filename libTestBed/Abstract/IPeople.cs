@@ -7,6 +7,5 @@ namespace libTestBed.Abstract
     {
         IQueryable<People> People { get; }
         void Save(People person);
-        void CallUpdateGraph(People personToSave)
     }
 }
