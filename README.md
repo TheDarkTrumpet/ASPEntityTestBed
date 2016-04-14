@@ -1,7 +1,6 @@
 # ASP.NET & Entity Framework TestBed
 
-### A very basic set of projects that are specifically relating to features I'm testing before I go about adding
-### it to a full-project.
+#### A very basic set of projects that are specifically relating to features I'm testing before I go about adding it to a full-project.
 
 ## Basic Project Structure
 
