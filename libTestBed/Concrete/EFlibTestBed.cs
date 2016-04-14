@@ -9,7 +9,7 @@ using libTestBed.Entities;
 
 namespace libTestBed.Concrete
 {
-    class EFLibTestBed : DbContext
+    public class EFLibTestBed : DbContext
     {
         public EFLibTestBed(string connString) : base(connString)
         {
@@ -26,6 +26,12 @@ namespace libTestBed.Concrete
             
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
+
         public virtual DbSet<People> People { get; set; }
+        public virtual DbSet<AttachmentsView> AttachmentView { get; set; }
     }
 }
