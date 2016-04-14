@@ -8,7 +8,7 @@ namespace webTestBed45
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            
         }
     }
 }
