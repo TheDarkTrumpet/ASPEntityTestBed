@@ -29,6 +29,7 @@ namespace libTestBed.Concrete
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<AttachmentsView>().MapToStoredProcedures();
         }
 
         public virtual DbSet<People> People { get; set; }
